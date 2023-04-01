@@ -1,4 +1,4 @@
 # HCI-design_challenge
 
-Site link:
+Website link:
 https://ioana2001.github.io/HCI-design_challenge/index.html
