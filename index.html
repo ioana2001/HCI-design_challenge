@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCI - Design Challenge</title>
+    <link rel="stylesheet" href="./style.css">
+    </link>
+</head>
+
+<body>
+    <h1>Train Station App - Iași</h1>
+
+    <h2>Interactive mockup/prototype (bonus)</h2>
+    <a href="./adobe_xd/Web_1920___1.html" target="_blank">Adobe XD - design</a>
+
+    <h2>Usability problems</h2>
+    <p>The problems that arise in the train station are:</p>
+    <ul>
+        <li>uncertainty about the right platform (1A, 2B, …)/train number</li>
+        <li>audio signals are not clear</li>
+        <li>the orders of the wagons is not clear</li>
+        <li>it's harder for disabled people to get help in the station</li>
+    </ul>
+
+    <h2>Personas</h2>
+    <ul>
+        <li><a href="persona-primary.html">Popescu Adrian - Type: Primary</a></li>
+        <li><a href="persona-secondary.html">Popescu Liliana - Type: Secondary</a></li>
+        <li><a href="persona-supplemental.html">Mark Scott - Type: Supplemental (person with disability)</a></li>
+    </ul>
+
+    <h2>Better design solutions</h2>
+    <p>Our application solves this problem by using an AR software that augments the real world with useful information
+        for the user, like train number, line number, wagon number, directions to a bathroom, etc.</p>
+    <p>To get the wagon number we use the following method:</p>
+    <ul>
+        <li>attach to each wagon an unique identifier (like a QR code)</li>
+        <li>adds cameras to the train station that covers the whole train</li>
+    </ul>
+    <p>The images from the cameras are the processed by a server that gives to the users of the application the correct
+        wagon number, train number, etc. </p>
+    <p>Because there can be situations in which a person did not hear what was said through the speakers, the voice is
+        also registered in the application, so the user can replay the audio how many times they need. </p>
+    <p>The app also has a help button for persons with disabilities to get help from the staff, for example, if a person
+        with reduced mobility needs to get their wheelchair in the train, they can request help from the application.
+    </p>
+
+    <h2>Context of use:</h2>
+    <p>Our application is used to provide useful information for people that travel by train and have difficulties in
+        the station.</p>
+
+    <h2>Main audience(s):</h2>
+    <p>Anyone that travels by train, from people that use the train almost daily to new travelers.</p>
+
+    <h2>Empiric laws:</h2>
+    <ul>
+        <li>
+            <h3>Fitts' Law</h3>
+            <p>Fitts' Law is a principle that states the time required to move to a target area is a function of the
+                distance to the target and the size of the target. In other words, the larger the target and the closer
+                it is to the starting point, the easier it is to hit. This law is often used in interface design to help
+                determine the size and placement of buttons or other clickable elements.</p>
+            <p>If we try to apply this principle in real life, in the train station, if we start at the train schedule
+                table, we cannot see all the platform numbers, and so the person is required to check all the platforms
+                to get to the right one. The problem is that the number plates for each platform are not visible enough.
+            </p>
+            <p>In our appication, the buttons on the home page are big and easy for the user to find and press.</p>
+            <img src="./images/app-1.jpg" alt="app" height="500">
+        </li>
+        <li>
+            <h3>Hick's Law</h3>
+            <p>Hick's Law states that the time it takes to make a decision increases as the number of choices increases.
+                This law can be applied to interface design by reducing the number of options presented to users, to
+                make it easier for them to make a decision and navigate the interface.</p>
+            <p>On the digital screen from the station you can see all the trains that are about to arrive, so you don’t
+                have unnecessary information, so we can say that hick’s law applies here</p>
+            <p>On the main screen on our application, we have a reduced number of options, so there is no trouble for
+                the user to select what he/she needs.</p>
+        </li>
+        <li>
+            <h3>Steering Law</h3>
+            <p>Steering Law, also known as the law of steering, is a principle that states that the time it takes to
+                steer a pointing device (such as a mouse) to a target is a function of the angle between the starting
+                position and the target. In other words, it is easier to steer to targets that are closer to the
+                starting position and require smaller angles of movement. This law can be applied in interface design to
+                help determine the placement and spacing of clickable elements, as well as the sensitivity of the
+                pointing device.</p>
+            <p>the wagon number (and informations) are only placed at one end of the wagon so the user is required to
+                walk to the other end to see if he’s getting in the right wagon/train</p>
+            <img src="./images/train-1.jpg" alt="train">
+            <p>When we designed the application we have taken into account the distance between the buttons and how easy
+                is for the user to press them.</p>
+            <img src="./images/app-2.jpg" alt="app" height="500">
+        </li>
+    </ul>
+
+    <h2>Metaphors/idioms</h2>
+    <p>Metaphors and idioms are figures of speech that allow designers to use familiar concepts to explain or represent
+        new or complex ideas. They can be used in interface design to create a sense of familiarity or to help users
+        understand the function or purpose of an element. For example, using the metaphor of a file folder to represent
+        a digital storage system, or the idiom "drag and drop" to describe moving an object on a screen.</p>
+    <ul>
+        <li>
+            <ul>
+                <li>the symbol in the image is a metaphor for indicating where passengers should throw their trash</li>
+            </ul>
+            <img src="./images/train-2.jpg" alt="train">
+        </li>
+        <li>
+            <ul>
+                <li>the first symbol in the image is an idiom that specifies the number of seats in the train wagon</li>
+                <li>the second symbol is a metaphor that specifies that smoking is not allowed in the wagon</li>
+                <li>the third symbol specifies that there is heating and AC in the wagon</li>
+            </ul>
+            <img src="./images/train-3.jpg" alt="train">
+        </li>
+        <li>
+            <ul>
+                <li>the symbol on the left is an idiom that specify that the you are required to wear a mask</li>
+                <li>the symbol from the right is a metaphor that specifies that the train station is monitorized</li>
+            </ul>
+            <img src="./images/train-4.jpg" alt="train">
+        </li>
+        <li>
+            <ul>
+                <li>the symbol from the image is a metaphor that shows where is a bathroom</li>
+            </ul>
+            <img src="./images/train-5.jpg" alt="train">
+        </li>
+    </ul>
+
+    <h2>Affordances</h2>
+    <p>Affordances refer to the properties of an object or element that suggest how it should be used. In interface
+        design, affordances are used to make it clear how users can interact with different elements of the system. For
+        example, a button that looks like it can be clicked suggests that it can be interacted with, while a static
+        image suggests that it is not interactive.</p>
+    <ul>
+        <li>
+            <p>in the images we see a thermostat that we can interact with</p>
+            <img src="./images/train-6.jpg" alt="train">
+            <img src="./images/train-7.jpg" alt="train">
+        </li>
+        <li>
+            <p>in this image we see a button we can interact with to open the doors</p>
+            <img src="./images/train-8.jpg" alt="train">
+        </li>
+    </ul>
+
+    <h2>Visual variables</h2>
+    <p>Visual variables are the attributes of visual elements that can be used to communicate information or create
+        emphasis in a design. These variables include things like color, size, shape, and texture. In interface design,
+        visual variables can be used to help communicate information quickly and clearly, such as using color coding to
+        indicate the status of a task or highlighting important information with bold or larger text.</p>
+    <ul>
+        <li>the wagon informations are highlighted to be easier to identify</li>
+        <img src="./images/train-9.jpg" alt="train">
+    </ul>
+
+    <h2>Flow of the application:</h2>
+    <p>The user enters the train station, opens the application and then he/she is guided to the train and wagon where
+        he/she is supposed to be in. </p>
+    <p>In the Main Menu we have three buttons: one for speaker, one for 'scan QR' and one for 'ask for help'. </p>
+    <p>In the speaker section you can select a train and hear the information about departure.</p>
+    <p>In the 'scan QR' section the user can scan a wagon or platform number, and if you press on the number you see
+        aditional information, like what trains are about to arrive.</p>
+
+
+    <h3>Involvement of each team's member</h3>
+    <ul>
+        <li>Mareci Ioana-Amalia: Metaphors/idioms, Affordances</li>
+        <li>Petrariu Ioana: Empiric laws, Visual variables</li>
+        <li>Gurau Iulian: Application design, Flow of the application</li>
+        <li>All memebers: personas, Usability problems, Better design solutions,
+            Context of use, Main audience(s)
+        </li>
+    </ul>
+
+</body>
+
+</html>
